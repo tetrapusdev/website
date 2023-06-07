@@ -1,7 +1,8 @@
 {
-  "name": "notus-pro",
+  "name": "tetrapus-site",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://tetrapus.dev/",
   "dependencies": {
     "parcel-bundler": "^1.6.1"
   },
