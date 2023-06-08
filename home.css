@@ -1491,6 +1491,20 @@
   padding-bottom: var(--dl-space-space-fiveunits);
   background-color: var(--dl-color-secondary-100);
 }
+.home-section3 h2 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.home-section3 p {
+  margin: 1em 0;
+}
+
+.home-section3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
 .home-container44 {
   width: 100%;
   display: flex;
