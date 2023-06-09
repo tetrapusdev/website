@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Tetrapus</title>
-    <link rel="icon" href="./favicon.ico" />
+    <link rel="icon" href="../favicon.ico" />
     <meta property="og:title" content="Tetrapus" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -540,12 +540,11 @@
                 <span class="footer-text03 TextXS">USEFUL LINKS</span>
                 <a href="/"><span class="footer-text04 TextSM">Home</span></a>
                 <a href="/about"><span class="footer-text04 TextSM">About Us</span></a>
-                <a href="/services"><span class="footer-text04 TextSM">Our Services</span></a>
                 <a href="/contact"><span class="footer-text04 TextSM">Contact</span></a>
                 <a href="https://www.instagram.com/tetrapusdev/" target="_blank"><span class="footer-text04 TextSM">Instagram</span></a>
                 <a href="https://github.com/tetrapusdev/" target="_blank"><span class="footer-text04 TextSM">GitHub</span></a>
-                <a href="/privacy-policy/"><span class="footer-text04 TextSM">Privacy Policy</span></a>
-                <a href="/terms-conditions/"><span class="footer-text04 TextSM">Terms and Conditions</span></a>
+                <a href="/privacy-policy"><span class="footer-text04 TextSM">Privacy Policy</span></a>
+                <a href="/terms-conditions"><span class="footer-text04 TextSM">Terms & Conditions</span></a>
               </div>
             </div>
           </div>
@@ -554,22 +553,6 @@
         </div>
       </div>
     </div>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-    <script>
-      // Function to send the email
-      function sendEmail() {
-        // Prevent default form submission
-        event.preventDefault();
-    
-        // Get the form data
-        var name = document.getElementById("name").value;
-        var email = document.getElementById("email").value;
-        var message = document.getElementById("message").value;
-    
-        document.getElementById("email-response").style.display = "block";
-        var emailResponse = document.getElementById("email-response");
-        emailResponse.innerHTML = "Email sent successfully!";
-      }
-    </script>    
+    <script src="../public/scripts.js"></script>
   </body>
 </html>
