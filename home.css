@@ -1194,7 +1194,7 @@
   flex: 0 0 auto;
   width: 66%;
   display: flex;
-  margin-top: var(--dl-space-space-fiveunits);
+  margin-top: var(--dl-space-space-unit);
   align-items: center;
   margin-bottom: var(--dl-space-space-fiveunits);
   flex-direction: column;
