@@ -643,7 +643,7 @@
 .header-reduced {
   flex: 0 0 auto;
   width: 100%;
-  height: 12vh;
+  height: 8vh;
   display: flex;
   position: relative;
   align-items: center;
