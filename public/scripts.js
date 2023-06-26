@@ -283,19 +283,75 @@
   }
 
   listenForUrlChanges();
+
+  const slideUp = (target, duration=500, callback=undefined) => {
+    target.style.transitionProperty = 'height, margin, padding';
+    target.style.transitionDuration = duration + 'ms';
+    target.style.boxSizing = 'border-box';
+    target.style.height = target.offsetHeight + 'px';
+    target.offsetHeight;
+    target.style.overflow = 'hidden';
+    target.style.height = 0;
+    target.style.paddingTop = 0;
+    target.style.paddingBottom = 0;
+    target.style.marginTop = 0;
+    target.style.marginBottom = 0;
+    window.setTimeout(() => {
+      target.style.display = 'none';
+      target.style.removeProperty('height');
+      target.style.removeProperty('padding-top');
+      target.style.removeProperty('padding-bottom');
+      target.style.removeProperty('margin-top');
+      target.style.removeProperty('margin-bottom');
+      target.style.removeProperty('overflow');
+      target.style.removeProperty('transition-duration');
+      target.style.removeProperty('transition-property');
+      if (callback) { callback(); }
+    }, duration);
+  }
+
+  // Function to send the contact email
+  const sendEmail = function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const felems = Array.from(form.elements);
+    const name = form.querySelector("input[name=name]");
+    const email = form.querySelector("input[name=email]");
+    const message = form.querySelector("textarea");
+
+    // First, reset the form state
+    form.parentNode.querySelector(".form-error").style.display = "none";
+    email.style.removeProperty("background-color");
+    felems.forEach((elem) => {
+      elem.disabled = false;
+      elem.readOnly = false;
+    });
+    
+    const emailregexp = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (! (name.value.match(/\w+/i) && email.value.match(emailregexp) && message.value.match(/\w+/i))) {
+      form.parentNode.querySelector(".form-error").style.display = "block";
+      if (email.value && !email.value.match(emailregexp)) {
+        email.style.backgroundColor = "#daa";
+      }
+      return false;
+    }
+
+    // Block form elements
+    felems.forEach((elem) => {
+      elem.disabled = true;
+      elem.readOnly = true;
+    });
+
+    // Send the form..!
+    window.setTimeout(() => {
+      slideUp(form, 500, () => {
+        form.parentNode.querySelector(".form-success").style.display = "block";
+      });
+    }, 1000);
+  }
+
+  // Enable contact form submission
+  Array.from(document.getElementsByClassName("contact-form")).forEach(
+    (form) => form.addEventListener("submit", sendEmail, true)
+  );
 })();
-
-// Function to send the email
-function sendEmail() {
-  // Prevent default form submission
-  event.preventDefault();
-
-  // Get the form data
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
-
-  document.getElementById("email-response").style.display = "block";
-  var emailResponse = document.getElementById("email-response");
-  emailResponse.innerHTML = "Email sent successfully!";
-}

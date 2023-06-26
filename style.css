@@ -201,3 +201,15 @@ input {
 img {
   display: block;
 }
+
+form.contact-form *[disabled] {
+  background-color: #aaa !important;
+}
+.form-success, .form-error {
+  text-align: center;
+  margin-top: 3rem !important;
+}
+.form-error {
+  margin-top: 1rem !important;
+  color: red !important;
+}
