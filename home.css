@@ -235,6 +235,7 @@
   .header-logo {
     width: 70px;
     object-fit: fill;
+    background-color: white;
   }
 }
 @media (min-width: 480px) {
