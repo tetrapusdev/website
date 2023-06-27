@@ -233,14 +233,12 @@
 }
 @media (max-width: 480px) {
   .header-logo {
-    width: 120px;
-    object-fit: fill;
+    width: 90px;
   }
 }
 @media (min-width: 480px) {
   .header-logo {
     width: 150px;
-    object-fit: fill;
   }
 }
 @media(max-width: 991px) {
