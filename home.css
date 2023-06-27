@@ -231,6 +231,16 @@
 .header-root-class-name {
   margin-bottom: 0px;
 }
+@media (max-width: 480px) {
+  .header-logo {
+    width: 70px;
+  }
+}
+@media (min-width: 480px) {
+  img {
+    width: 150px;
+  }
+}
 @media(max-width: 991px) {
   .header-header {
     max-width: 1320px;
