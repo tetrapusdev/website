@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="180mm"
-   height="72mm"
-   viewBox="0 0 180 72"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 426"
    version="1.1"
    id="svg4256"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.75722503"
-     inkscape:cx="398.82464"
-     inkscape:cy="353.26355"
-     inkscape:window-width="1868"
-     inkscape:window-height="1016"
-     inkscape:window-x="52"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1"
+     inkscape:cx="398.16434"
+     inkscape:cy="350.62233"
+     inkscape:window-width="1549"
+     inkscape:window-height="752"
+     inkscape:window-x="102"
+     inkscape:window-y="114"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs4253">
@@ -48,13 +48,13 @@
      id="layer1">
     <text
        xml:space="preserve"
-       transform="matrix(0.41932523,0,0,0.7023827,-10.052736,-70.363341)"
+       transform="matrix(0.41932523,0,0,0.7023827,4.772151,37.363902)"
        id="text4203"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:85.3333px;font-family:RaviPrakash;-inkscape-font-specification:RaviPrakash;white-space:pre;shape-inside:url(#rect4205);display:inline;fill:#cd7319;fill-opacity:1"><tspan
          x="77.496094"
          y="173.97196"
-         id="tspan178"><tspan
+         id="tspan4313"><tspan
            style="font-family:Timmana;-inkscape-font-specification:Timmana"
-           id="tspan176">TETRAPUS</tspan></tspan></text>
+           id="tspan4311">TETRAPUS</tspan></tspan></text>
   </g>
 </svg>
