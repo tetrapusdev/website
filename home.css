@@ -234,11 +234,13 @@
 @media (max-width: 480px) {
   .header-logo {
     width: 70px;
+    object-fit: fill;
   }
 }
 @media (min-width: 480px) {
-  img {
+  .header-logo {
     width: 150px;
+    object-fit: fill;
   }
 }
 @media(max-width: 991px) {
